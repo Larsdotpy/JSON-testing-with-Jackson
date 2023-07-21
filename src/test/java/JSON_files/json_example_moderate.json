@@ -1,0 +1,22 @@
+{
+  "string": "Hello, JSON!",
+  "number": 42,
+  "boolean": true,
+  "nullValue": null,
+  "array": [1, 2, 3, "four", false],
+  "object": {
+    "nestedString": "This is a nested string",
+    "nestedNumber": 123.45,
+    "nestedBoolean": true
+  },
+  "specialCharacters": "!@#$%^&*()",
+  "unicodeCharacter": "\u00A9",
+  "escapeCharacters": "This string has a \"quote\" and a newline\n",
+  "date": "2023-07-20",
+  "time": "15:30:00",
+  "datetime": "2023-07-20T15:30:00Z",
+  "url": "https://example.com",
+  "emptyArray": [],
+  "emptyObject": {},
+  "scientificNotation": 1.23e6
+}
