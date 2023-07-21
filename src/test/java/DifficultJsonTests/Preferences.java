@@ -17,5 +17,9 @@ public class Preferences {
     @JsonProperty("settings")
     private Settings settings;
 
+    public boolean getNotifications() {
+        return notifications;
+    }
+
     // Getters and setters (or Lombok annotations) for theme, notifications, language, and settings
 }
