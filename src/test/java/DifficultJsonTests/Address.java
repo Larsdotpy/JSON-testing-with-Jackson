@@ -20,6 +20,4 @@ public class Address {
 
     @JsonProperty("country")
     private String country;
-
-    // Getters and setters (or Lombok annotations) for street, city, zipcode, and country
 }

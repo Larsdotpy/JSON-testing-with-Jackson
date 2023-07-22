@@ -17,8 +17,6 @@ public class SimpleAssertions {
 
     JsonData jsonData = objectMapper.readValue(file, JsonData.class);
 
-
-
     public SimpleAssertions() throws IOException {
     }
 

@@ -22,4 +22,3 @@ public class Contact {
     @JsonProperty("address")
     private Address address;
 }
-

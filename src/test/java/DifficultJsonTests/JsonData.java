@@ -11,6 +11,4 @@ public class JsonData {
 
     @JsonProperty("data")
     private Data data;
-
-    // Getters and setters (or Lombok annotations) for metadata and data
 }
