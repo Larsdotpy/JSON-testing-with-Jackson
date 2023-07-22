@@ -2,10 +2,12 @@ package DifficultJsonTests;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Data
+@NoArgsConstructor
 public class Metadata {
     @JsonProperty("app")
     private AppInfo app;
@@ -21,6 +23,4 @@ public class Metadata {
 
     @JsonProperty("tags")
     private List<String> tags;
-
-    // Getters and setters (or Lombok annotations) for app, author, createdAt, contributors, and tags
 }

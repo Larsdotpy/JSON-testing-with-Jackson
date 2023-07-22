@@ -2,9 +2,21 @@ package DifficultJsonTests;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
 public class Profile {
+    public Profile(String firstName, String lastName, int age, String gender, Contact contact, Preferences preferences, SocialMedia socialMedia) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.gender = gender;
+        this.contact = contact;
+        this.preferences = preferences;
+        this.socialMedia = socialMedia;
+    }
+
     @JsonProperty("firstName")
     private String firstName;
 

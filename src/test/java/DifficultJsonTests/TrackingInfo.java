@@ -2,9 +2,16 @@ package DifficultJsonTests;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
 public class TrackingInfo {
+    public TrackingInfo(String carrier, String trackingNumber) {
+        this.carrier = carrier;
+        this.trackingNumber = trackingNumber;
+    }
+
     @JsonProperty("carrier")
     private String carrier;
 
