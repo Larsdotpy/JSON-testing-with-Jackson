@@ -25,24 +25,6 @@ public class Metadata {
     @JsonProperty("tags")
     private List<String> tags;
 }
-@Data
-@NoArgsConstructor
-class Author {
-    public Author(String name, int age, Contact contact) {
-        this.name = name;
-        this.age = age;
-        this.contact = contact;
-    }
-
-    @JsonProperty("name")
-    private String name;
-
-    @JsonProperty("age")
-    private int age;
-
-    @JsonProperty("contact")
-    private Contact contact;
-}
 
 @NoArgsConstructor
 @Data
@@ -63,23 +45,3 @@ class AppInfo {
     private String description;
 }
 
-@Data
-@NoArgsConstructor
-class Contributors {
-    public Contributors(String name, int age, Contact contact) {
-        this.name = name;
-        this.age = age;
-        this.contact = contact;
-    }
-
-    @JsonProperty("name")
-    private String name;
-
-    @JsonProperty("age")
-    private int age;
-
-    @JsonProperty("contact")
-    private Contact contact;
-
-    // Getters and setters (or Lombok annotations) for name, age, and contact
-}

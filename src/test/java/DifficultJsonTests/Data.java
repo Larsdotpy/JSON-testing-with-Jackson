@@ -13,55 +13,7 @@ public class Data {
     @JsonProperty("users")
     private List<Users> users;
 }
-@lombok.Data
-@NoArgsConstructor
-class Users {
-    @JsonProperty("id")
-    private int id;
 
-    @JsonProperty("username")
-    private String username;
-
-    @JsonProperty("profile")
-    private Profile profile;
-
-    @JsonProperty("orders")
-    private List<Orders> orders;
-}
-@lombok.Data
-@NoArgsConstructor
-class Profile {
-    public Profile(String firstName, String lastName, int age, String gender, Contact contact, Preferences preferences, SocialMedia socialMedia) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
-        this.gender = gender;
-        this.contact = contact;
-        this.preferences = preferences;
-        this.socialMedia = socialMedia;
-    }
-
-    @JsonProperty("firstName")
-    private String firstName;
-
-    @JsonProperty("lastName")
-    private String lastName;
-
-    @JsonProperty("age")
-    private int age;
-
-    @JsonProperty("gender")
-    private String gender;
-
-    @JsonProperty("contact")
-    private Contact contact;
-
-    @JsonProperty("preferences")
-    private Preferences preferences;
-
-    @JsonProperty("social_media")
-    private SocialMedia socialMedia;
-}
 @lombok.Data
 @NoArgsConstructor
 class Preferences {
@@ -164,47 +116,6 @@ class SocialMedia {
 
     @JsonProperty("linkedin")
     private String linkedin;
-}
-
-@lombok.Data
-@NoArgsConstructor
-class Orders {
-    @JsonProperty("order_id")
-    private String orderId;
-
-    @JsonProperty("total")
-    private double total;
-
-    @JsonProperty("status")
-    private String status;
-
-    @JsonProperty("items")
-    private List<Items> items;
-
-    @JsonProperty("shipping")
-    private Shipping shipping;
-
-    @JsonProperty("payment")
-    private Payment payment;
-}
-
-@lombok.Data
-@NoArgsConstructor
-class Items {
-    @JsonProperty("product")
-    private String product;
-
-    public Items(String product, int quantity, double price) {
-        this.product = product;
-        this.quantity = quantity;
-        this.price = price;
-    }
-
-    @JsonProperty("quantity")
-    private int quantity;
-
-    @JsonProperty("price")
-    private double price;
 }
 
 @lombok.Data
