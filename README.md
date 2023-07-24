@@ -10,13 +10,13 @@ With Asynchronous Streams, you can break down this big collection into smaller c
 
 Here's how it works in simple terms:
 
-*Splitting the data*: First, you take your big collection of data and divide it into smaller pieces. Each piece is called a "stream."
+**Splitting the data**: First, you take your big collection of data and divide it into smaller pieces. Each piece is called a "stream."
 
-*Asynchronous processing*: Instead of handling one stream at a time, you process these streams asynchronously. This means you can deal with multiple streams concurrently. It's like multitasking for your program.
+**Asynchronous processing**: Instead of handling one stream at a time, you process these streams asynchronously. This means you can deal with multiple streams concurrently. It's like multitasking for your program.
 
-*Independent processing*: Each stream is processed independently of the others. So, if one stream takes a bit longer to process, it won't slow down the others.
+**Independent processing**: Each stream is processed independently of the others. So, if one stream takes a bit longer to process, it won't slow down the others.
 
-*Merging the results*: Once all the streams are processed, you can combine their results back together to get your final output. Since you processed them simultaneously, it should be faster than processing the entire collection all at once.
+**Merging the results**: Once all the streams are processed, you can combine their results back together to get your final output. Since you processed them simultaneously, it should be faster than processing the entire collection all at once.
 
 The key benefits of using Asynchronous Streams are improved performance and responsiveness in your Java programs when dealing with large datasets.
 
@@ -25,14 +25,14 @@ In Java, you can work with Asynchronous Streams using methods like map, filter, 
 ### Boxing and unboxing
 Boxing and unboxing are concepts related to converting between primitive data types and their corresponding wrapper classes in Java. These wrapper classes are part of the Java API and allow primitive types to be treated as objects.
 
-*Boxing*: Boxing is the process of converting a primitive data type into its corresponding wrapper class object. In Java, primitive data types (like int, double, char, etc.) are not objects and don't have methods associated with them. However, sometimes we might need to treat them as objects, like when using certain Java collections that can only store objects.
+**Boxing**: Boxing is the process of converting a primitive data type into its corresponding wrapper class object. In Java, primitive data types (like int, double, char, etc.) are not objects and don't have methods associated with them. However, sometimes we might need to treat them as objects, like when using certain Java collections that can only store objects.
 
 For example, suppose you have an int variable and you want to store it in an ArrayList, which can only store objects. You need to box the int value into an Integer object to do so. The process of converting the int to an Integer is called boxing.
 ```
 int num = 42;            // primitive int
 Integer boxedNum = num; // boxing: converting int to Integer
 ```
-*Unboxing*: Unboxing is the opposite process of boxing. It involves converting a wrapper class object back into its corresponding primitive data type. This is necessary when you want to extract the actual value from the wrapper object.
+**Unboxing**: Unboxing is the opposite process of boxing. It involves converting a wrapper class object back into its corresponding primitive data type. This is necessary when you want to extract the actual value from the wrapper object.
 
 For example, if you have an Integer object and you need to perform some arithmetic operation with it, you first need to unbox it to get the primitive int value.
 ```
@@ -47,11 +47,11 @@ In the context of Java streams, collecting refers to the process of gathering th
 
 Here's how collecting works in Java streams in simple terms:
 
-*Stream Creation*: First, you create a stream from a data source, such as a list or an array.
+**Stream Creation**: First, you create a stream from a data source, such as a list or an array.
 
-*Intermediate Operations*: You can perform various intermediate operations on the stream, like filtering, mapping, or sorting. These operations transform the elements in the stream but do not produce any final results.
+**Intermediate Operations**: You can perform various intermediate operations on the stream, like filtering, mapping, or sorting. These operations transform the elements in the stream but do not produce any final results.
 
-*Terminal Operation - Collecting*: After applying any intermediate operations, you use the collect() method to perform a terminal operation. This operation gathers the elements of the stream and collects them into a collection or a custom container.
+**Terminal Operation - Collecting**: After applying any intermediate operations, you use the collect() method to perform a terminal operation. This operation gathers the elements of the stream and collects them into a collection or a custom container.
 
 For example, let's say you have a list of names and you want to collect them into a new list that contains only the names starting with the letter "A":
 
